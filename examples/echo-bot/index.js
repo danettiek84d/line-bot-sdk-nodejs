@@ -5,18 +5,22 @@ const express = require('express');
 
 // create LINE SDK config from env variables
 const config = {
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
-  channelSecret: process.env.CHANNEL_SECRET,
+  channelAccessToken: "D0IiGzATJEyKVk7gZFohlSQijK7YnGeWyd3G63TyD23PC2BgYSJQb7cgSbyQ3Ez8EiSBpTo6/O4MF/IlkASlVUDTiQqJiIee6ss1bND+CBQkBi8GHLMvrXxvhSYF/JfkSlz3zQ/wvRTnjwzUIO58CAdB04t89/1O/w1cDnyilFU=",
+  channelSecret: "cdb5490f1175370d36840378f858b420",
 };
 
 // create LINE SDK client
 const client = new line.messagingApi.MessagingApiClient({
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
+  channelAccessToken: "D0IiGzATJEyKVk7gZFohlSQijK7YnGeWyd3G63TyD23PC2BgYSJQb7cgSbyQ3Ez8EiSBpTo6/O4MF/IlkASlVUDTiQqJiIee6ss1bND+CBQkBi8GHLMvrXxvhSYF/JfkSlz3zQ/wvRTnjwzUIO58CAdB04t89/1O/w1cDnyilFU="
 });
 
 // create Express app
 // about Express itself: https://expressjs.com/
 const app = express();
+app.get("/",(req,rep)=>{
+
+rep.end("hello 2034");
+});
 
 // register a webhook handler with middleware
 // about the middleware, please refer to doc

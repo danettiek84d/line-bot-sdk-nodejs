@@ -1,0 +1,88 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "pretest": {
+      "name": "pretest",
+      "command": "npm run pretest",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test",
+      "runAtStart": false
+    },
+    "covtest": {
+      "name": "covtest",
+      "command": "npm run covtest",
+      "runAtStart": false
+    },
+    "prettier": {
+      "name": "prettier",
+      "command": "npm run prettier",
+      "runAtStart": false
+    },
+    "format": {
+      "name": "format",
+      "command": "npm run format",
+      "runAtStart": false
+    },
+    "format:check": {
+      "name": "format:check",
+      "command": "npm run format:check",
+      "runAtStart": false
+    },
+    "clean": {
+      "name": "clean",
+      "command": "npm run clean",
+      "runAtStart": false
+    },
+    "prebuild": {
+      "name": "prebuild",
+      "command": "npm run prebuild",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "docs": {
+      "name": "docs",
+      "command": "npm run docs",
+      "runAtStart": false
+    },
+    "docs:build": {
+      "name": "docs:build",
+      "command": "npm run docs:build",
+      "runAtStart": false
+    },
+    "docs:deploy": {
+      "name": "docs:deploy",
+      "command": "npm run docs:deploy",
+      "runAtStart": false
+    },
+    "apidocs": {
+      "name": "apidocs",
+      "command": "npm run apidocs",
+      "runAtStart": false
+    },
+    "generate-changelog": {
+      "name": "generate-changelog",
+      "command": "npm run generate-changelog",
+      "runAtStart": false
+    },
+    "release": {
+      "name": "release",
+      "command": "npm run release",
+      "runAtStart": false
+    }
+  }
+}
